@@ -66,7 +66,7 @@ def init_centroids(boxes,n_anchors):
     boxes_num = len(boxes)
 
     centroid_index = np.random.choice(boxes_num, 1)
-    centroids.append(boxes[centroid_index])
+    centroids.append(boxes[centroid_index[0]])
 
     print(centroids[0].w,centroids[0].h)
 
